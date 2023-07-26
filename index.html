@@ -177,8 +177,153 @@
 
     </header>
 
-    <main>
+    <main class="max-w-screen-xl mx-auto mt-20" >
+      <!-- deal of the day -->
+      <div class="grid grid-cols-1 space-y-5   md:flex ">
+        <div class=" space-y-4">
+          <h2 class=" text-5xl font-extrabold text-center md:text-start
+          ">Deal of the day</h2>
+          <p class=" text-base text-center md:w-1/2 md:text-start  ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="pl-14 ">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> <span class="pt-5 "><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512"><style>svg{fill:#000000}</style><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div>  <span class="pt-5 "><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512"><style>svg{fill:#000000}</style><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div>  <span class="pt-5 "><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512"><style>svg{fill:#000000}</style><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg></span>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:53;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- cards -->
+     <section class="my-24 space-y-2 grid grid-cols-1 md:grid-cols-2 lg:flex  gap-5 mx-24  ">
+      <!-- card 1 -->
+      <div class="card w-96  bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit6.png" alt="fruit" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <hr class="text-black  w-1/2">
+          <p>Apples</p>
+          
+        </div>
+        <div class="rating justify-center pb-5" id="card1">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        </div>
+        <!-- modal 1 -->
+        <!-- You can open the modal using ID.showModal() method -->
+<button class="btn text-orange-600 bg-white" onclick="my_modal_3.showModal()">details</button>
+<dialog id="my_modal_3" class="modal">
+  <form method="dialog" class="modal-box">
+    
+    <div class="card w-96  bg-base-100 ">
+      <figure class="px-10 pt-10">
+        <img src="/images/fruit6.png" alt="fruit" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <hr class="text-black  w-1/2">
+        <p>Apples</p>
+        
+      </div>
+      <div class="rating justify-center pb-5" id="card1">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="flex justify-center gap-5">
+        <button class="py-1 px-5 text-white bg-orange-500 rounded">close</button>
+        <button class="py-1 px-5  text-white bg-orange-500 rounded">buy now</button>
+      </div>
+     
+  </form>
+</dialog>
+      </div>
+      <!-- card 2 -->
+      <div class="card w-96  bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit7.png" alt="fruit" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <hr class="text-black  w-1/2">
+          <p>Orange</p>
+          
+        </div>
+        <div class="rating justify-center pb-5" >
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card w-96  bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit8.png" alt="fruit" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <hr class="text-black  w-1/2">
+          <p>Red Dragon</p>
+          
+        </div>
+        <div class="rating justify-center pb-5" >
+          <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+          <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="card w-96  bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/fruit9.png" alt="fruit" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          <hr class="text-black  w-1/2">
+          <p>Banana</p>
+          
+        </div>
+        <div class="rating justify-center pb-5" >
+          <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+     </section>
     </main>
 
     <footer>
